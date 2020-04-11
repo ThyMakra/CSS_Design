@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Toggler</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    
+
+<!-- The defer attribute is a boolean attribute. 
+    When present, it specifies that the script is 
+    executed when the page has finished parsing. -->
+</head>
+<body class="light">
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"> Home </li>
+            <li class="nav-item"> About </li>
+
+            <!-- Dropdown  -->
+            <li class="nav-item has-dropdown">
+                <a href="#"> Theme </a>
+                <ul class="dropdown">
+                    <li class="dropdown-item">
+                        <a id="light" href="#">Light</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="dark" href="#">Dark</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a id="solar" href="#">Solarize</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav-item"> Login </li>
+        </ul>
+    </nav>
+    
+    <header>
+        <img src="logo.png" class="logo">
+        <h1>Front-End web Development, <br>Fired UP</h1>
+
+        <p>Flutter, FireBase, JavaScript, NodeJS</p>
+    </header>
+
+    <main>
+        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. It usually begins with:
+
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”
+            The purpose of lorem ipsum is to create a natural looking block of text (sentence, paragraph, page, etc.) that doesn't distract from the layout. A practice not without controversy, laying out pages with meaningless filler text can be very useful when the focus is meant to be on design, not content.
+            
+            The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+
+    </main>
+    
+</body>
+</html>

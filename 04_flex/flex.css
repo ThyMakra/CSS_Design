@@ -1,0 +1,76 @@
+:root {
+    font-family: 'Open Sans';
+    font-size: 1em;
+    --note-bg: #1b1e23;
+    --note-txt: #fbfbf8;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+.flex-container {
+    background: #D5D8DC;
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    height: 100px;
+    margin: 1rem;
+}
+
+.flex-main {
+    padding: 1rem;
+    margin-right: 40vw;
+}
+
+.flex-element {
+    /* flex: 1; */
+    width: 50px;
+    height: 50px;
+
+}
+
+/* color */
+.flex-element:nth-child(1) {
+    background-color: #A569BD;   
+}
+
+.flex-element:nth-child(2) {
+    background-color: #3498DB;
+}
+
+.flex-element:nth-child(3) {
+    background-color: #2ECC71;
+}
+
+/* space evenly */
+.flex-container:nth-child(4) {
+    justify-content: space-evenly;
+}
+
+/* flex-end */
+.flex-container:nth-child(5) {
+    justify-content: flex-end;
+}
+
+/* flex-end + align-item */
+.flex-container:nth-child(6) {
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* center + align-item */
+.flex-container:nth-child(7) {
+    justify-content: center;
+    align-items: center;
+}
+
+/* center + align-item */
+.flex-container:nth-child(8) {
+    flex-direction: column;
+    align-items: center;
+}

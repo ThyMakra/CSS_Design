@@ -1,0 +1,26 @@
+.photo-grid {
+    display: grid;
+    gap: 1em;
+
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* implicit grid | default height automatically created row */
+    grid-auto-rows: 300px;
+    
+}
+
+/* do nothing on smaller screen */
+@media screen and (min-width: 600px) {
+    .card-double {
+        grid-row: span 2 / auto;
+        grid-column: span 2 / auto;
+    }
+
+    .card-tall {
+        /* start: wherever, span across 2 rows / end: automatically */
+        grid-row: span 2 / auto;
+    }
+
+    .card-wide {
+        grid-column: span 2 / auto;
+    }
+}

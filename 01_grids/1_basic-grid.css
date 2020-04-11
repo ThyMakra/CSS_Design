@@ -1,0 +1,12 @@
+.basic-grid {
+    /* stack up */
+    display: grid; 
+    gap: 1rem;
+
+    /* 1 fractional space, or available space 
+     repeat(number of element, how much space) */
+        /* grid-template-columns: repeat(12, 1fr);  */ /* too thin */
+        /* grid-template-columns: repeat(12, minmax(240px, 1fr));  */ /* overflow horizontally */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    
+}

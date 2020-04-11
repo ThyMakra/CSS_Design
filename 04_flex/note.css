@@ -1,0 +1,22 @@
+.note-main {
+    position: fixed;
+    right: 0;
+    width: 40vw;
+}
+
+.note {
+    background-color: var(--note-bg);
+    color: var(--note-txt);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.note p {
+    font-weight: 2em;
+}
+
+.note pre {
+    font-size: 1.3em;
+}

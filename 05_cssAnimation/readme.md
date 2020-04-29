@@ -7,10 +7,13 @@ Tween animation: calculate all the values(time) in between.
 > The browser calculates the new value(ex: opacity) from every frame rendered, using linear time function CSS/time 
 
 * If you don't want the css to animate in a linear time:
-    * Built-in easing function 
-            ![screenshot](./pic/1.png)
-            ![screenshot](./pic/2.png)
     * Custome Bezier curve
+    * Built-in easing function 
+
+    ![screenshot](./pic/1.png)
+    ![screenshot](./pic/2.png)
+
+    
         
 ### Using transition
     1. Property you want to animate (animate fade-in fade-out will use opacity)

@@ -1,0 +1,61 @@
+
+:root {
+ --speed: 500ms;
+}
+
+#logo1 {
+    opacity: 1;
+    transition: opacity var(--speed) ease-in-out;
+}
+
+#logo2 {
+    opacity: 1;
+    transition: opacity var(--speed) cubic-bezier(0.1, 0.7, 1.0. 0.1);
+}
+
+#logo1:hover, #logo2:hover {
+    opacity: 0;
+}
+
+#logo3 {
+    
+    animation: hueCol 3s;
+    animation-iteration-count: infinite;
+}
+
+
+/* keyframes */
+@keyframes hueCol {
+    from {
+        color: purple;
+    }
+    50% {
+        /* time relative to the duration, will perform the action */
+        color: lightblue;
+    }
+    to {
+        color: pink;
+    }
+}
+
+
+
+
+
+
+
+
+/* Some default css */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open sans';
+}
+
+.container {
+    display: flex;
+
+}
+.container div {
+    padding: 50px;
+}

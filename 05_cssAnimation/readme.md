@@ -8,8 +8,8 @@ Tween animation: calculate all the values(time) in between.
 
 * If you don't want the css to animate in a linear time:
     * Built-in easing function 
-        ![screenshot](./pic/1.png)
-        ![screenshot](./pic/2.png)
+            ![screenshot](./pic/1.png)
+            ![screenshot](./pic/2.png)
     * Custome Bezier curve
         
 ### Using transition

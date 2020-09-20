@@ -22,4 +22,5 @@
 
 - Reference: 
     1. [Fireship](https://youtu.be/29deL9MFfWc)
+    - Open the application : [Only available locally](file:///home/makra/Desktop/Files/01_Programming/10_Design/01_Css/07_cssCards/public/index.html#)
 

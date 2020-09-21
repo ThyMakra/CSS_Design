@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    transform: translate(40%, 0);
+}
+
+button {
+    width: 160px;
+    height: 50px;
+    font-size: 1.2rem;   
+    margin: 50px;
+    /*  */
+    background: transparent;
+    border: none;
+    position: relative; /* make pseudo element relative to the button */
+}
+
+
+/* s : button 1 */
+.btn-1 {
+    background: #251d1d;
+    color: #fff;
+    border-radius: 15px;
+    transition: all .25s ease;
+
+    z-index: 1;
+}
+
+.btn-1::after, .btn-1::before {
+    content: '';
+    position: absolute;
+    /* display: block; */
+    opacity: .3;
+    background: rgb(75, 39, 39);
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: all .25s ease;
+    /* clip-path: inset(0); */
+}
+
+.btn-1:hover {
+    transform: translate(-12px, -12px);
+}
+
+.btn-1:hover::after {
+    transform: translate(6px, 6px);
+}
+
+.btn-1:hover::before {
+    transform: translate(12px, 12px);
+}
+/* e : button 1 */
+
+/* s : button 2  */
+.btn-2::before, .btn-2::after {
+    border: 3px solid #000;
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: all .25s ease;
+}
+
+.btn-2:hover::before {
+    transform: translate(5px, 5px);
+}
+
+.btn-2:hover::after {
+    transform: translate(-5px, -5px);
+}
+/* e : button 2 */
+
+/* s : button 3 */
+.btn-3::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: 10%;
+    height: 5px;
+    background: #000;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    transition: all .25s ease;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.btn-3:hover::after {
+    width: 100%;
+}
+/* e : button 3 */
+
+/* s : button 4 */
+.btn-4 {
+    overflow: hidden;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px -0px 0px 0px rgba(143, 64, 248, .5), 0px 0px 0px 0px rgba(39, 200, 255, .5);
+    transition: all .5s ease;
+}
+
+.btn-4::after {
+    content: '';
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #27d86c 0%, #26caf8 50%, #c625d0 100%);
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+.btn-4:hover {
+    transform: translate(0, -6px);
+    box-shadow: 10px -10px 25px 0px rgba(143, 64, 248, .25), -10px 10px 25px 0px rgba(39, 200, 255, .25);
+}
+
+.btn-4:hover::after {
+    transform: rotate(150deg);
+}
+/* e : button 4 */
+
+/* s : button 5 */
+.btn-5:hover {
+    color: #fff;
+}
+
+.btn-5::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: scale(.1);
+    background: #000;
+    z-index: -1;
+    opacity: 0;
+    transition: all .25s ease;
+}
+
+.btn-5:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+/* e : button 5 */
+
+/* s : button 6 */
+.btn-6 span,.btn-6 > .effect > span {
+    /* margin: 0;
+    transform: skew(-20deg); */
+    display: inline-block; /* span is inline, so can not apply transform */
+    transform: skew(-20deg);
+}
+.btn-6 {
+    border: 3px solid #000;
+    transform: skew(20deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.btn-6 .effect {
+    position: absolute;
+    background: #000;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0, -100%);
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+
+.btn-6:hover > span {
+    opacity: 0;
+    transform: scale(.5);
+}
+
+.btn-6:hover .effect {
+    transform: translate(0);
+}
+/* e : button 6 */
